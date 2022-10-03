@@ -1,3 +1,7 @@
 .print-only {
     display: none;
 }
+
+#css-warning {
+    display: none;
+}
