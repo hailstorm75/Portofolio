@@ -8,7 +8,7 @@ abstract class BaseViewModel {
      * Default constructor
      * @param title View title
      */
-    constructor(title: string) {
+    protected constructor(title: string) {
         if (!title || title.length == 0)
             throw new Error("Argument title cannot be null or empty");
 
