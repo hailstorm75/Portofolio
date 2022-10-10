@@ -1,7 +1,7 @@
 /**
  * Base class for all view models
  */
-abstract class BaseViewModel {
+export abstract class BaseViewModel {
     title: string;
 
     /**

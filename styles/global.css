@@ -5,3 +5,58 @@
 #css-warning {
     display: none;
 }
+
+header {
+
+}
+
+header .big-heading {
+    font-size: 40px;
+}
+
+header .small-heading {
+
+}
+
+header p {
+    font-size: 14px;
+}
+
+nav {
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+}
+
+.left li {
+    list-style-type: none;
+}
+
+.right {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    left: auto;
+    right: 40px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+}
+
+main div .middle {
+
+}
+
+footer {
+    text-align: center;
+}
