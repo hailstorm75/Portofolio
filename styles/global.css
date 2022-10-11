@@ -22,9 +22,10 @@ body {
 }
 
 header {
-    margin: 0 auto;
     max-width: 1000px;
     display: block;
+    margin: 0 auto;
+    height: 500px;
 }
 
 header .big-heading {
@@ -54,6 +55,7 @@ nav .menu {
     display: flex;
     justify-content: right;
     align-items: center;
+    user-select: none;
 }
 
 
@@ -79,7 +81,7 @@ main {
 .left {
     position: fixed;
     z-index: 5;
-    bottom: 0;
+    bottom: 15px;
     left: 40px;
     right: auto;
 }
@@ -91,7 +93,7 @@ main {
 .right {
     position: fixed;
     z-index: 5;
-    bottom: 0;
+    bottom: 15px;
     left: auto;
     right: 40px;
     transform-origin: 0 0;
@@ -103,5 +105,6 @@ main div .middle {
 }
 
 footer {
+    margin: 25px;
     text-align: center;
 }
