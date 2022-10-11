@@ -2,20 +2,37 @@
     display: none;
 }
 
+.no-select {
+    user-select: none;
+    cursor: default;
+}
+
 #css-warning {
     display: none;
 }
 
-header {
+html {
+    font-family: 'Roboto', sans-serif;
+}
 
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
 }
 
 header .big-heading {
-    font-size: 40px;
+    font-size: 75px;
 }
 
 header .small-heading {
-
+    margin-bottom: 15px;
 }
 
 header p {
@@ -23,12 +40,40 @@ header p {
 }
 
 nav {
+    overflow-x: hidden;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav .logo {
+}
+
+nav .menu {
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.menu a {
+    margin: 0 0 0 15px;
+}
+.menu a:link { text-decoration: none; }
+.menu a:visited { text-decoration: none; }
+.menu a:hover { text-decoration: none; }
+.menu a:active { text-decoration: none; }
+
+nav a:hover {
 
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+    counter-reset: section 0;
 }
 
 .left {

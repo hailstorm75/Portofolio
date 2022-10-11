@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="styles/global.css" />
         <link rel="stylesheet" type="text/css" media="print" href="styles/print.css" />
         <title class="title">Denis Akopyan</title>
@@ -16,11 +17,14 @@
         </div>
 
         <nav class="no-print">
-            <div>
-                <a href="#">About</a>
-                <a href="#">Experience</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+            <div class="logo">
+                <img src="https://avatars.githubusercontent.com/u/16069996?v=4" width="64" height="64" alt="Logo"/>
+            </div>
+            <div class="menu">
+                <a href="#about-me">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
         <header>
@@ -28,7 +32,8 @@
                 Hi, my name is <span class="authorName">Denis Akopyan</span> and I'm a
             </div>
             <div class="big-heading">
-                .NET Developer
+                .NET<br class="no-print"/>
+                Developer
             </div>
             <p>
                 I specialize in developing applications written in C# on the .NET platform.
@@ -72,11 +77,42 @@
             </ul>
         </div>
 
-        <div class="right no-print">
+        <div class="right no-print no-select">
             www.denis-akopyan.eu
         </div>
         <main>
+            <section id="about-me">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm Denis, a passionate developer, who loves to create and isn't afraid to try out new things.
+                    I've started my journey with LEGO&reg; Mindstorms, a great toy for exploring your creativity.
+                    This lead me into a rabbit hole of various tools and areas of the computing world and gave me a whole new perspective on how everything works.
+                </p>
+                <p>
 
+                </p>
+            </section>
+            <section id="experience">
+                <h1>Experience</h1>
+            </section>
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <article>
+                    <h2>MrDir</h2>
+                </article>
+                <article>
+                    <h2>Borec</h2>
+                </article>
+                <article>
+                    <h2>MarkDoc</h2>
+                </article>
+                <article>
+                    <h2>Spares Manual</h2>
+                </article>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+            </section>
         </main>
         <footer>
             &#169;<span class="copyrightYear">2022</span>, Denis Akopyan
