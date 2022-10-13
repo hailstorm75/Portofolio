@@ -1,13 +1,46 @@
 .no-print {
     display: none;
 }
+header {
+    all: unset;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+section {
+    all: unset;
+}
+section .sectionContent {
+    all: unset;
+}
+section:hover {
+    all: unset;
+}
 
 header .small-heading {
     font-size: 14px;
     display: inline;
 }
 
-header .big-heading {
+header h1 {
+    all: unset;
     font-size: 14px;
+    font-weight: normal;
     display: inline;
+}
+
+h1 {
+    all: unset;
+    font-weight: bold;
+    font-size: 26px;
+}
+h2 {
+    all: unset;
+    font-weight: bold;
+    font-size: 20px;
+}
+h3 {
+    all: unset;
+    font-weight: bold;
+    font-size: 16px;
 }
