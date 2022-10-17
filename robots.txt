@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /images
+Disallow: /styles
+Sitemap: https://denis-akopyan.eu/sitemap.xml
