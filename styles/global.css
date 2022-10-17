@@ -93,7 +93,7 @@ main {
     z-index: 5;
     bottom: 15px;
     left: auto;
-    right: 40px;
+    right: -40px;
     transform-origin: 0 0;
     transform: rotate(-90deg);
 }
