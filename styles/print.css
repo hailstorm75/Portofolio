@@ -25,6 +25,7 @@ header .small-heading {
 header h1 {
     all: unset;
     font-size: 14px;
+    color: #DCAB66;
     font-weight: normal;
     display: inline;
 }
