@@ -106,17 +106,29 @@ nav .socials-container {
     fill: gray;
 }
 
-.vertical-center {
-    vertical-align: middle;
+header#hero-header {
+    height: 350px;
+    background-image: url("../images/homeFeatured.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.large-header {
-    height: 350px;
-    line-height: 350px;
-    background-image: url("../images/homeFeatured.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+header div.header-content {
     text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    color: white;
+}
+
+div.header-content .large-heading {
+    font-size: 3em;
+    width: min-content;
+    margin: 0 auto;
+    text-align: left;
 }
