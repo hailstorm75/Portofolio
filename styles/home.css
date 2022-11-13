@@ -5,13 +5,11 @@
 #portfolio-grid {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
 }
 
 div#portfolio-grid .column {
     flex: 50%;
     max-width: 50%;
-    padding: 0 4px;
 }
 
 div#portfolio-grid .column .card {
@@ -47,10 +45,25 @@ div#portfolio-grid .column .card:hover {
     height: 64px;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+@media screen and (max-width: 1020px) {
+    #portfolio-grid {
+        display: block;
+        padding: 0 4px;
+    }
+
+    #portfolio-grid .column {
+        all: unset;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    div#portfolio-grid .column .card {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .card .card-content img {
+        display: none;
     }
 }
 

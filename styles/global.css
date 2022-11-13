@@ -41,7 +41,7 @@ footer {
 footer #footer-container {
     z-index: 10;
     margin: 0 auto;
-    width: 1040px;
+    width: 60%;
     height: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -73,17 +73,10 @@ footer div#footer-container .menu {
 nav #navContainer {
     z-index: 10;
     margin: 0 auto; /* centers the div */
-    width: 1040px;
+    width: 80%;
     display: grid;
     grid-template-columns: 64px auto 150px;
     overflow: hidden;
-}
-
-nav #socialsContainer {
-    z-index: 9;
-    float: right;
-    color: white;
-    list-style: none;
 }
 
 nav #navContainer .logo {
@@ -183,8 +176,15 @@ div.header-content .large-heading {
     font-size: 5em;
 }
 
-@media only screen and (max-width: 750px){
-    /* CSS that should be displayed if width is equal to or less than 991px goes here */
+@media screen and (max-width: 1020px){
+    nav #navContainer {
+        grid-template-columns: 64px auto;
+    }
+
+    nav .socials-container {
+        display: none;
+    }
+
     div.header-content .large-heading {
         width: min-content;
         text-align: left;
@@ -196,8 +196,12 @@ div.header-content .large-heading {
     }
 }
 
+@media screen and (max-width: 860px) {
+
+}
+
 main {
-    width: 1040px;
+    width: 60%;
     overflow: hidden;
     margin: 50px auto;
 }
