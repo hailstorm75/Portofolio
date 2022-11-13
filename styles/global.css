@@ -201,3 +201,7 @@ main {
     overflow: hidden;
     margin: 50px auto;
 }
+
+section p {
+    text-align: justify;
+}

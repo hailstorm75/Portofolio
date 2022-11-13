@@ -34,6 +34,10 @@ div#portfolio-grid .column .card:hover {
     text-align: right;
 }
 
+.card .card-content p {
+    text-align: left!important;
+}
+
 .card .card-title {
     margin-bottom: 15px;
     font-weight: bold;
