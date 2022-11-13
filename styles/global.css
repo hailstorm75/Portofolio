@@ -106,3 +106,17 @@ nav .socials-container {
     fill: gray;
 }
 
+.vertical-center {
+    vertical-align: middle;
+}
+
+.large-header {
+    height: 350px;
+    line-height: 350px;
+    background-image: url("../images/homeFeatured.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
