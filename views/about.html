@@ -3,14 +3,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="styles/global.css" />
-  <link rel="stylesheet" type="text/css" href="styles/home.css" />
-  <link rel="stylesheet" type="text/css" media="print, speech" href="styles/print.css" />
-  <title class="title">Home - Denis Akopyan</title>
+  <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+  <link rel="stylesheet" type="text/css" media="print, speech" href="../styles/print.css" />
+  <title class="title">About - Denis Akopyan</title>
 </head>
 <body>
 <a id="top"></a>
@@ -29,11 +28,11 @@
       <img src="https://avatars.githubusercontent.com/u/16069996?v=4" width="64" height="64" alt="Logo" style="user-select: none; -webkit-user-drag: none"/>
     </div>
     <div class="menu">
-      <a href="#" class="selected">Home</a>
-      <a href="views/about.html">About</a>
-      <a href="views/experience.html">Experience</a>
-      <a href="views/portfolio.html">Portfolio</a>
-      <a href="views/contacts.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="#" class="selected">About</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./contacts.html">Contact</a>
     </div>
     <div class="socials-container">
       <a href="https://github.com/hailstorm75" aria-label="GitHub" target="_blank" rel="noreferrer">
@@ -75,58 +74,34 @@
 </header>
 
 <main>
-  <section>
-    <h1 class="center-text">
-      My personal projects
-    </h1>
-    <div id="portfolio-grid">
-      <div class="column">
-        <div class="card">
-          <div class="card-title">
-            <h2>MarkDoc.Core</h2>
-          </div>
-          <div class="card-content">
-            <p>
-              Documentation generator for .NET libraries
-            </p>
-            <img src="https://repository-images.githubusercontent.com/248785839/752e5780-6ace-11ea-8d75-c90d1a20a752" alt="MarkDoc.Core icon"/>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">
-            <h2>Borec</h2>
-          </div>
-          <div class="card-content">
-            <p>
-              Student-resource website
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="card-title"><h2>Spares Manual</h2></div>
-          <div class="card-content">
-            <p>
-              Interactive repair manuals for classic motorcycles
-            </p>
-            <img src="https://repository-images.githubusercontent.com/310472741/e1380700-8af8-11eb-99dd-61c7a9136ac1" alt="Spares Manual icon"/>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title"><h2>Guitar Tools</h2></div>
-          <div class="card-content">
-            <p>
-              Guitar music scales tools
-            </p>
-            <img src="https://raw.githubusercontent.com/hailstorm75/Guitar-Tools/master/guitarTools/Resources/icon.png" alt="Guitar Tools icon"/>
-          </div>
-        </div>
-      </div>
+  <section id="about-me">
+    <div class="sectionContent">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Denis, a passionate developer who loves to create and isn't afraid to try new things.
+        I've started my journey with LEGO&reg; Mindstorms - a great toy for exploring your creativity.
+        This led me into a rabbit hole of various tools and areas of the computing world and gave me a whole new perspective on how everything works.
+      </p>
+      <p>
+        Skipping a few years ahead, I land my first developer contract for a language-teaching company to develop complementary interactive media content for their textbooks.
+        From that moment, it was clear that this career path was an obvious choice for me.
+      </p>
+      <p>
+        Today I am a developer with 5+ years under my belt and a passion for writing reliable, readable, and tested applications without compromising performance or documentation.
+        I am fortunate to work for both a small and a corporate companies. There I've gained experience in areas such as working in a team, leading a project, starting new projects, and evolving old ones.
+      </p>
+      <p>
+        Here's what I've explored so far in the .NET space:
+      </p>
+      <ul class="twoColumns">
+        <li>WPF</li>
+        <li>xUnit</li>
+        <li>Avalonia</li>
+        <li>Specflow</li>
+        <li>WinForms</li>
+        <li>D365 SDK</li>
+      </ul>
     </div>
-  </section>
-  <section>
-
   </section>
 </main>
 <footer>
@@ -134,7 +109,7 @@
     <div id="copyright">
       &#169; 2022, Denis Akopyan
     </div>
-    <div id="back-to-top" class="no-print">
+    <div id="back-to-top">
       <a href="#top" aria-label="Back To Top">
         <svg width="64" height="64" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
           <title>Back To Top</title>
@@ -142,12 +117,12 @@
         </svg>
       </a>
     </div>
-    <div class="no-print menu">
-      <a href="#">Home</a>
-      <a href="views/about.html">About</a>
-      <a href="views/experience.html">Experience</a>
-      <a href="views/portfolio.html">Portfolio</a>
-      <a href="views/contacts.html">Contact</a>
+    <div class="menu">
+      <a href="../index.html">Home</a>
+      <a href="#">About</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./contacts.html">Contact</a>
     </div>
   </div>
 </footer>

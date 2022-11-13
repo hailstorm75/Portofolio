@@ -45,3 +45,27 @@ h3 {
     font-weight: bold;
     font-size: 16px;
 }
+
+header div.header-content {
+    all: unset;
+}
+
+div.header-content .small-heading {
+    all: unset;
+}
+
+div.header-content .large-heading {
+    all: unset;
+}
+
+div#portfolio-grid {
+    all: unset;
+    display: block;
+    width: 100%;
+}
+div#portfolio-grid .column .card {
+    all: unset;
+}
+header#hero-header {
+    all: unset;
+}

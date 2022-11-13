@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+#portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+div#portfolio-grid .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+div#portfolio-grid .column .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    margin: 10px;
+}
+div#portfolio-grid .column .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card .card-content {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 1fr auto;
+}
+
+.card .card-content img {
+    text-align: right;
+}
+
+.card .card-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card img {
+    height: 64px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1em;
+}
+

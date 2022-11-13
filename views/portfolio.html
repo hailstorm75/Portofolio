@@ -3,14 +3,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="styles/global.css" />
-  <link rel="stylesheet" type="text/css" href="styles/home.css" />
-  <link rel="stylesheet" type="text/css" media="print, speech" href="styles/print.css" />
-  <title class="title">Home - Denis Akopyan</title>
+  <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+  <link rel="stylesheet" type="text/css" media="print, speech" href="../styles/print.css" />
+  <title class="title">Portfolio - Denis Akopyan</title>
 </head>
 <body>
 <a id="top"></a>
@@ -29,11 +28,11 @@
       <img src="https://avatars.githubusercontent.com/u/16069996?v=4" width="64" height="64" alt="Logo" style="user-select: none; -webkit-user-drag: none"/>
     </div>
     <div class="menu">
-      <a href="#" class="selected">Home</a>
-      <a href="views/about.html">About</a>
-      <a href="views/experience.html">Experience</a>
-      <a href="views/portfolio.html">Portfolio</a>
-      <a href="views/contacts.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./experience.html">Experience</a>
+      <a href="#" class="selected">Portfolio</a>
+      <a href="./contacts.html">Contact</a>
     </div>
     <div class="socials-container">
       <a href="https://github.com/hailstorm75" aria-label="GitHub" target="_blank" rel="noreferrer">
@@ -75,66 +74,58 @@
 </header>
 
 <main>
-  <section>
-    <h1 class="center-text">
-      My personal projects
-    </h1>
-    <div id="portfolio-grid">
-      <div class="column">
-        <div class="card">
-          <div class="card-title">
-            <h2>MarkDoc.Core</h2>
-          </div>
-          <div class="card-content">
-            <p>
-              Documentation generator for .NET libraries
-            </p>
-            <img src="https://repository-images.githubusercontent.com/248785839/752e5780-6ace-11ea-8d75-c90d1a20a752" alt="MarkDoc.Core icon"/>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">
-            <h2>Borec</h2>
-          </div>
-          <div class="card-content">
-            <p>
-              Student-resource website
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="card-title"><h2>Spares Manual</h2></div>
-          <div class="card-content">
-            <p>
-              Interactive repair manuals for classic motorcycles
-            </p>
-            <img src="https://repository-images.githubusercontent.com/310472741/e1380700-8af8-11eb-99dd-61c7a9136ac1" alt="Spares Manual icon"/>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title"><h2>Guitar Tools</h2></div>
-          <div class="card-content">
-            <p>
-              Guitar music scales tools
-            </p>
-            <img src="https://raw.githubusercontent.com/hailstorm75/Guitar-Tools/master/guitarTools/Resources/icon.png" alt="Guitar Tools icon"/>
-          </div>
-        </div>
-      </div>
+  <section id="portfolio">
+    <div class="sectionContent">
+      <h2>Portfolio</h2>
+      <article>
+        <h3>MrDir</h3>
+        <p>
+          You can maximize your productivity with the right tools. However, when working with files on Windows, I found both the integrated File Explorer and third-party tools like Total Commander unappealing.
+          So, the obvious solution was to create my own file management tool.
+        </p>
+      </article>
+      <article>
+        <h3>Borec</h3>
+        <p>
+          More often than not, university students spin up some or other student resource system to share study materials, tips, course and tutor reviews, etc.
+          The one my university had, was lacking in many areas. During that time, Microsoft released Blazor, their new web development framework. I saw an opportunity to learn web development and attempt to create an alternative to the current student resource system.
+        </p>
+        <p>
+          I've introduced myself to Azure DevOps, and basics of SCRUM management; however, it did not contribute much to the project, as I was the only team member.
+          The project was abandoned, because a new student-resource system had been published recently.
+        </p>
+      </article>
+      <article>
+        <h3>MarkDoc</h3>
+        <p>
+          After discovering Doxygen and Wiki pages in GitLab, I was surprised to find that there was no solution for generating source-code documentation in Markdown.
+          Thus as always, I attempted to fill this empty gap by creating my own tool. I've been working on this project for 3+ years now. I'm even writing a Bachelor's thesis about it.
+        </p>
+        <p>
+          You can read more about the project in said thesis.
+        </p>
+      </article>
+      <article>
+        <h3>Spares Manual</h3>
+        <p>
+          A colleague has proposed a website for classic motorcycle enthusiats, that would simplify their repairs. Said motorcycles parts manuals that are very difficult to navigate; thus, the goal of this project was to provide an easy to use interface for hobbiests, and a quick way to manage inventory for part sellers.
+          The project was an opportunity for me to model a database, explore gRPC for API endpoints, revisit Blazor, and dive deep into the mysterious world of authentication.
+        </p>
+        <p>
+          Development went well; however, it halted due to the disappearance of the colleague during start of the COVID pandemic. I wish he is well, but I'm unable to contact him again.
+          In its current state, the project is incomplete and abandoned.
+        </p>
+      </article>
     </div>
   </section>
-  <section>
 
-  </section>
 </main>
 <footer>
   <div id="footer-container">
     <div id="copyright">
       &#169; 2022, Denis Akopyan
     </div>
-    <div id="back-to-top" class="no-print">
+    <div id="back-to-top">
       <a href="#top" aria-label="Back To Top">
         <svg width="64" height="64" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
           <title>Back To Top</title>
@@ -142,12 +133,12 @@
         </svg>
       </a>
     </div>
-    <div class="no-print menu">
-      <a href="#">Home</a>
-      <a href="views/about.html">About</a>
-      <a href="views/experience.html">Experience</a>
-      <a href="views/portfolio.html">Portfolio</a>
-      <a href="views/contacts.html">Contact</a>
+    <div class="menu">
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./experience.html">Experience</a>
+      <a href="#">Portfolio</a>
+      <a href="./contacts.html">Contact</a>
     </div>
   </div>
 </footer>

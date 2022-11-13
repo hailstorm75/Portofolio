@@ -7,6 +7,10 @@
     cursor: default;
 }
 
+.center-text {
+    text-align: center;
+}
+
 #css-warning {
     display: none;
 }
@@ -14,6 +18,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +32,45 @@ nav {
     padding: 20px;
 }
 
-#navContainer {
+footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+footer #footer-container {
+    z-index: 10;
+    margin: 0 auto;
+    width: 1040px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    overflow: hidden;
+}
+
+footer div#footer-container div {
+    bottom: 50%;
+    transform: translateY(40%);
+}
+footer div#footer-container div#back-to-top {
+    margin: 0 auto;
+    transform: translateY(10%);
+}
+
+footer div#footer-container div#back-to-top path {
+    fill: white;
+}
+
+footer div#footer-container .menu {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 15;
+}
+
+nav #navContainer {
     z-index: 10;
     margin: 0 auto; /* centers the div */
     width: 1040px;
@@ -36,18 +79,18 @@ nav {
     overflow: hidden;
 }
 
-#socialsContainer {
+nav #socialsContainer {
     z-index: 9;
     float: right;
     color: white;
     list-style: none;
 }
 
-nav .logo {
+nav #navContainer .logo {
     grid-column: 1;
 }
 
-nav .menu {
+nav #navContainer .menu {
     grid-column: 2;
     display: flex;
     justify-content: center;
@@ -107,9 +150,12 @@ nav .socials-container {
 }
 
 header#hero-header {
-    height: 350px;
+    height: 450px;
+    -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
+    -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
     background-image: url("../images/homeFeatured.jpg");
-    background-position: center;
+    background-position: 0 25%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -120,15 +166,38 @@ header div.header-content {
     align-items: center;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    width: 100%;
+    margin: 0 auto;
+    transform: translate(0%, -50%);
     color: white;
 }
 
+div.header-content .small-heading {
+    font-size: 1.5em;
+}
+
 div.header-content .large-heading {
-    font-size: 3em;
-    width: min-content;
     margin: 0 auto;
-    text-align: left;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5em;
+}
+
+@media only screen and (max-width: 750px){
+    /* CSS that should be displayed if width is equal to or less than 991px goes here */
+    div.header-content .large-heading {
+        width: min-content;
+        text-align: left;
+        font-size: 3em;
+    }
+
+    div.header-content .small-heading {
+        font-size: 0.9em;
+    }
+}
+
+main {
+    width: 1040px;
+    overflow: hidden;
+    margin: 50px auto;
 }
