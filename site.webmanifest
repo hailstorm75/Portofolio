@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Denis Akopyan - .NET Developer portfolio",
+    "short_name": "Denis Akopyan",
     "icons": [
         {
             "src": "images/android-chrome-192x192.png",
@@ -15,5 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "https://denis-akopyan.eu"
 }
