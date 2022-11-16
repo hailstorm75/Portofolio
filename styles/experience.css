@@ -1,33 +1,13 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
- }
-
- body {
-    margin: 0;
-    padding: 30px 0;
-    font-family: 'Roboto', sans-serif;
-    background: #F1F2F6;
- }
-
- h1 {
-    text-align: center;
-    font-weight: 300;
-    color: #777
- }
-
- h1 span {
-    font-weight: 600;
- }
-
  .timeline-container {
     width: 80%;
     padding: 50px 0;
     margin: 50px auto;
     position: relative;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-container:before {
@@ -39,7 +19,11 @@
     width: 2px;
     height: 100%;
     background: #CCD1D9;
-    z-index: 1
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-block {
@@ -55,15 +39,26 @@
     -moz-box-pack: justify;
     justify-content: space-between;
     clear: both;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-block-right {
     float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-block-left {
     float: left;
-    direction: rtl
+    direction: rtl -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .marker {
@@ -73,25 +68,41 @@
     border: 2px solid #F5F7FA;
     background: #4FC1E9;
     margin-top: 10px;
-    z-index: 9999
+    z-index: 9999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-content {
     width: 95%;
     padding: 0 15px;
-    color: #666
+    color: #666;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
-    font-weight: 500
+    font-weight: 500;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-content span {
     font-size: 15px;
     color: #a4a4a4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  .timeline-content p {
@@ -99,6 +110,10 @@
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
  }
 
  @media screen and (max-width: 768px) {
@@ -106,10 +121,12 @@
        left: 8px;
        width: 2px;
     }
+
     .timeline-block {
        width: 100%;
        margin-bottom: 30px;
     }
+
     .timeline-block-right {
        float: none;
     }
