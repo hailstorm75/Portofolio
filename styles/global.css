@@ -197,7 +197,24 @@ div.header-content .large-heading {
 }
 
 @media screen and (max-width: 860px) {
+    footer #footer-container {
+        grid-template-columns: 1fr;
+    }
 
+    footer div#footer-container .menu {
+        visibility: collapse;
+        display: none;
+    }
+
+    footer div#footer-container div#back-to-top {
+        visibility: collapse;
+        display: none;
+    }
+
+    .logo img {
+        height: 32px;
+        width: 32px;
+    }
 }
 
 main {
