@@ -92,6 +92,7 @@ nav #navContainer .menu {
     user-select: none;
     -webkit-user-select: none;
     z-index: 15;
+    position: absolute;
 }
 
 .menu a {
@@ -186,6 +187,56 @@ main {
     margin: 50px auto;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0;
+    transform: rotate(-405deg);
+}
+
 @media screen and (max-width: 1020px){
     nav #navContainer {
         grid-template-columns: 64px auto;
@@ -232,5 +283,65 @@ main {
 
     section p {
         text-align: left;
+    }
+
+    nav #navContainer {
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav #navContainer .menu {
+        all: unset;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+    .menu {
+        all: unset;
+        display: flex;
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle ~ .menu a {
+        visibility: collapse;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu a {
+        visibility: visible;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #navContainer :nth-child(4) {
+        order: 4;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu > a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
     }
 }
