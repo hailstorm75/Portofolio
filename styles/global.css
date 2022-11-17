@@ -176,6 +176,16 @@ div.header-content .large-heading {
     font-size: 5em;
 }
 
+section p {
+    text-align: justify;
+}
+
+main {
+    width: 60%;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
 @media screen and (max-width: 1020px){
     nav #navContainer {
         grid-template-columns: 64px auto;
@@ -201,6 +211,10 @@ div.header-content .large-heading {
         grid-template-columns: 1fr;
     }
 
+    footer #footer-container #copyright {
+       text-align: center;
+    }
+
     footer div#footer-container .menu {
         visibility: collapse;
         display: none;
@@ -215,14 +229,8 @@ div.header-content .large-heading {
         height: 32px;
         width: 32px;
     }
-}
 
-main {
-    width: 60%;
-    overflow: hidden;
-    margin: 50px auto;
-}
-
-section p {
-    text-align: justify;
+    section p {
+        text-align: left;
+    }
 }
