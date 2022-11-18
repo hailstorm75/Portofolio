@@ -77,61 +77,14 @@
     </div>
   </div>
 </nav>
-<header id="hero-header">
-  <div class="header-content no-select">
-    <div class="small-heading">
-      Hi, I'm <span class="authorName">Denis Akopyan</span> and I'm a
-    </div>
-    <div class="large-heading">
-      .NET Developer
-    </div>
-  </div>
-</header>
 
 <main>
   <section id="portfolio">
     <h1>My Portfolio</h1>
-    <article>
-      <h2>MrDir</h2>
-      <p>
-        You can maximize your productivity with the right tools. However, when working with files on Windows, I found both the integrated File Explorer and third-party tools like Total Commander unappealing.
-        So, the obvious solution was to create my own file management tool.
-      </p>
-    </article>
-    <article>
-      <h2>Borec</h2>
-      <p>
-        More often than not, university students spin up some or other student resource system to share study materials, tips, course and tutor reviews, etc.
-        The one my university had, was lacking in many areas. During that time, Microsoft released Blazor, their new web development framework. I saw an opportunity to learn web development and attempt to create an alternative to the current student resource system.
-      </p>
-      <p>
-        I've introduced myself to Azure DevOps, and basics of SCRUM management; however, it did not contribute much to the project, as I was the only team member.
-        The project was abandoned, because a new student-resource system had been published recently.
-      </p>
-    </article>
-    <article>
-      <h2>MarkDoc</h2>
-      <p>
-        After discovering Doxygen and Wiki pages in GitLab, I was surprised to find that there was no solution for generating source-code documentation in Markdown.
-        Thus as always, I attempted to fill this empty gap by creating my own tool. I've been working on this project for 3+ years now. I'm even writing a Bachelor's thesis about it.
-      </p>
-      <p>
-        You can read more about the project in said <a href="https://github.com/hailstorm75/MarkDoc.Thesis" target="_blank">thesis</a>.
-      </p>
-    </article>
-    <article>
-      <h2>Spares Manual</h2>
-      <p>
-        A colleague has proposed a website for classic motorcycle enthusiats, that would simplify their repairs. Said motorcycles parts manuals that are very difficult to navigate; thus, the goal of this project was to provide an easy to use interface for hobbiests, and a quick way to manage inventory for part sellers.
-        The project was an opportunity for me to model a database, explore gRPC for API endpoints, revisit Blazor, and dive deep into the mysterious world of authentication.
-      </p>
-      <p>
-        Development went well; however, it halted due to the disappearance of the colleague during start of the COVID pandemic. I wish he is well, but I'm unable to contact him again.
-        In its current state, the project is incomplete and abandoned.
-      </p>
-    </article>
-    <article>
-      <h2>Guitar Tools</h2>
+
+    <article class="card">
+      <a id="guitar-tools"></a>
+      <h2 class="card-title">Guitar Tools</h2>
       <p>
         Before fully committing to learning development, I had been investing the majority of my time into music.
         I was interested in finding tools that would help me practice playing, and understand theory.
@@ -141,7 +94,80 @@
         The obvious choice was to create my own tool to help me practice my playing; thus, Guitar Tools was born.
       </p>
       <p>This project helped me fall in love with WPF, even though it uses it incorrectly.</p>
+      <p>
+        <a href="https://github.com/hailstorm75/Guitar-Tools" target="_blank">Source</a>
+      </p>
     </article>
+    <article class="card">
+      <a id="common"></a>
+      <h2 class="card-title">Common</h2>
+      <p>
+        The inspiration for this project came from my first professional experience at an employer. A company that develops multiple products probably needs to solve the same problems over and over again. To overcome that, they'd have some library of commonly used functions, which would be shared with their products.
+      </p>
+      <p>
+        Why not have the same for my own projects? And that is why I attempted to create my own set of libraries for solving common problems. Nevertheless, I hadn't had many projects at the time, and didn't really need such a library. So, the project mainly consisted of a mathematical, LINQ and random helper functions libraries.
+        The project was an interesting introduction into creating NuGet packages, and configuring CI/CD pipelines on GitLab.
+      </p>
+      <p>
+        <a href="https://gitlab.com/hailstorm75/Common" target="_blank">Source</a>
+      </p>
+    </article>
+    <article class="card">
+      <a id="mrdir"></a>
+      <h2 class="card-title">MrDir</h2>
+      <p>
+        You can maximize your productivity with the right tools. However, when working with files on Windows, I found both the integrated File Explorer and third-party tools like Total Commander unappealing.
+        So, the obvious solution was to create my own file management tool.
+      </p>
+      <p>
+        <a href="https://gitlab.com/hailstorm75/MrDir" target="_blank">Source</a>
+      </p>
+    </article>
+    <article class="card">
+      <a id="borec"></a>
+      <h2 class="card-title">Borec</h2>
+      <p>
+        More often than not, university students spin up some or other student resource system to share study materials, tips, course and tutor reviews, etc.
+        The one my university had, was lacking in many areas. During that time, Microsoft released Blazor, their new web development framework. I saw an opportunity to learn web development and attempt to create an alternative to the current student resource system.
+      </p>
+      <p>
+        I've introduced myself to Azure DevOps, and basics of SCRUM management; however, it did not contribute much to the project, as I was the only team member.
+        The project was abandoned, because a new student-resource system had been published recently.
+      </p>
+      <p>
+        <a href="https://dev.azure.com/DenisAkopyan/Borec" target="_blank">Source</a>
+      </p>
+    </article>
+    <article class="card">
+      <a id="markdoc"></a>
+      <h2 class="card-title">MarkDoc</h2>
+      <p>
+        After discovering Doxygen and Wiki pages in GitLab, I was surprised to find that there was no solution for generating source-code documentation in Markdown.
+        Thus as always, I attempted to fill this empty gap by creating my own tool. I've been working on this project for 3+ years now. I'm even writing a Bachelor's thesis about it.
+      </p>
+      <p>
+        You can read more about the project in said <a href="https://github.com/hailstorm75/MarkDoc.Thesis" target="_blank">thesis</a>.
+      </p>
+      <p>
+        <a href="https://github.com/hailstorm75/MarkDoc.Core" target="_blank">Source</a>
+      </p>
+    </article>
+    <article class="card">
+      <a id="spares-manual"></a>
+      <h2 class="card-title">Spares Manual</h2>
+      <p>
+        A colleague has proposed a website for classic motorcycle enthusiats, that would simplify their repairs. Said motorcycles parts manuals that are very difficult to navigate; thus, the goal of this project was to provide an easy to use interface for hobbiests, and a quick way to manage inventory for part sellers.
+        The project was an opportunity for me to model a database, explore gRPC for API endpoints, revisit Blazor, and dive deep into the mysterious world of authentication.
+      </p>
+      <p>
+        Development went well; however, it halted due to the disappearance of the colleague during start of the COVID pandemic. I wish he is well, but I'm unable to contact him again.
+        In its current state, the project is incomplete and abandoned.
+      </p>
+      <p>
+        <a href="https://github.com/hailstorm75/SparesManual" target="_blank">Source</a>
+      </p>
+    </article>
+
   </section>
 </main>
 <footer>

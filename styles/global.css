@@ -74,8 +74,6 @@ footer div#footer-container .menu {
     z-index: 15;
 }
 
-
-
 nav .socials-container {
     display: flex;
     justify-content: center;
@@ -119,7 +117,7 @@ div.header-content .small-heading {
     font-size: 1.5em;
 }
 
-div.header-content .large-heading {
+div.header-content h1.large-heading {
     margin: 0 auto;
     font-weight: bold;
     text-align: center;
@@ -223,6 +221,43 @@ main {
     transform: rotate(-405deg);
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card .card-content {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 1fr auto;
+}
+
+.card .card-content img {
+    text-align: right;
+}
+
+.card .card-content p {
+    text-align: left!important;
+}
+
+.card .card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card img {
+    height: 64px;
+}
 @media screen and (max-width: 1020px){
     nav #navContainer {
         grid-template-columns: 64px auto;
