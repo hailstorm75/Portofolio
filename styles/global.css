@@ -28,7 +28,6 @@ html {
 body {
     margin: 0;
     width: 100%;
-    min-height: 100%;
 }
 
 nav {
@@ -53,7 +52,7 @@ footer #footer-container {
 }
 
 footer div#footer-container div {
-    bottom: 50%;
+    /* bottom: 50%; */
     transform: translateY(40%);
 }
 footer div#footer-container div#back-to-top {
@@ -263,6 +262,7 @@ h2 {
 .card img {
     height: 64px;
 }
+
 @media screen and (max-width: 1020px){
     nav #navContainer {
         grid-template-columns: 64px auto;
@@ -343,5 +343,98 @@ h2 {
     }
     .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none;
+        visibility: collapse;
+        height: 0;
+    }
+
+    .center-text {
+        text-align: left;
+    }
+
+    body {
+        padding: 5px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header#hero-header {
+        background-image: none;
+        color: black;
+        height: fit-content;
+    }
+
+    header#hero-header > div.header-content {
+        width: fit-content;
+        text-align: left;
+    }
+
+    header#hero-header .small-heading {
+        display: inline;
+        font-size: 14px;
+        color: black;
+    }
+    header#hero-header h1.large-heading {
+        display: inline;
+        font-size: 14px;
+        color: black;
+        font-weight: normal;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        background-color: transparent;
+        color: black;
+        height: fit-content;
+    }
+
+    footer div#footer-container {
+        display: block;
+        height: 26px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    footer div#footer-container div#back-to-top {
+        display: none;
+    }
+
+    footer div#footer-container div.menu {
+        display: none;
+        bottom: 0;
+        transform: none;
+    }
+
+    .card {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card .card-title {
+        margin: 0;
+    }
+
+    .card .card-title h3 {
+        margin: 0;
+    }
+
+    .card img {
+        visibility: collapse;
+        display: none;
+    }
+
+    section p {
+        text-align: left!important;
     }
 }
