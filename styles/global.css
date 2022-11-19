@@ -255,6 +255,11 @@ h2 {
     font-weight: bold;
 }
 
+.card .card-subtitle {
+    color: gray;
+    font-style: italic;
+}
+
 .card img {
     height: 64px;
 }
