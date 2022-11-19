@@ -1,0 +1,57 @@
+#contacts-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#contacts-grid > div:nth-child(1) {
+    margin-right: 20px;
+}
+
+#contacts-grid a {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: min-content;
+}
+
+form {
+    display: flex!important;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px
+}
+
+form > textarea {
+    min-height: 100px;
+}
+
+@media screen and (max-width: 860px) {
+    #contacts-grid a > span {
+        display: none;
+        visibility: collapse;
+    }
+
+    #contacts-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacts-grid > div:nth-child(1) {
+        order: 2;
+    }
+    #contacts-grid > div:nth-child(2) {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: start;
+        order: 1;
+    }
+
+    #contacts-grid > div:nth-child(2) h2 {
+        margin: 0;
+        padding: 0;
+        display: none;
+        visibility: collapse;
+    }
+}
